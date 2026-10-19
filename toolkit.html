@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>The Toolkit — High Table Research Department</title>
+  <meta name="description" content="A literature matrix, sample-size calculator, abstract forge and curated research library.">
+  <meta name="theme-color" content="#07101b">
+  <meta property="og:title" content="The Toolkit — High Table Research Department">
+  <meta property="og:description" content="Instruments for the middle of the research journey.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/brand/og-cover.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/brand/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/brand/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+  <meta name="application-name" content="High Table Research Department">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="High Table">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="toolkit">
+  <a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
+
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a class="brand" href="index.html" aria-label="High Table Research Department" data-i18n-aria="common.brandName">
+        <img class="brand__mark" src="assets/img/brand/logo-mark.svg" alt="" width="44" height="44">
+        <span class="brand__text">
+          <span class="brand__name" data-i18n="common.brandName">High Table Research Department</span>
+          <span class="brand__latin" data-i18n="common.brandLatin">RESEARCH DEVELOPMENT DEPARTMENT</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-i18n="common.menu">Menu</button>
+      <div class="masthead__menu" id="site-menu">
+        <nav class="nav" aria-label="Primary navigation" data-i18n-aria="common.navLabel">
+          <a href="index.html" data-nav="home" data-i18n="common.navHome">The Department</a>
+          <a href="index.html#chain" data-i18n="common.navChain">Full chain</a>
+          <a href="studio.html" data-nav="studio" data-i18n="common.navStudio">Research Studio</a>
+          <a href="toolkit.html" data-nav="toolkit" data-i18n="common.navToolkit">Toolkit</a>
+          <a href="papers.html" data-nav="papers" data-i18n="common.navPapers">Papers</a>
+          <a href="notes.html" data-nav="notes" data-i18n="common.navNotes">Field Notes</a>
+        </nav>
+        <div class="lang" role="group" aria-label="Language" data-i18n-aria="common.language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+          <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="page-hero__inner">
+          <div>
+            <p class="eyebrow eyebrow--light" data-i18n="toolkit.hero.eyebrow">The toolkit</p>
+            <h1 data-i18n="toolkit.hero.title">Instruments for the middle.</h1>
+            <p class="page-hero__lead" data-i18n="toolkit.hero.lead">Read the field, size a sample, forge an abstract, keep a literature matrix. Everything runs in your browser; nothing is uploaded.</p>
+          </div>
+          <p class="page-hero__note"><strong>HT / TOOLS</strong><span data-i18n="toolkit.hero.note">Your matrix and drafts are stored locally in this browser.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolkit-section">
+      <div class="wrap">
+        <div class="tabs" role="tablist" data-i18n-aria="common.toolkitSections">
+          <button class="tab is-active" type="button" id="tab-matrix" role="tab" aria-selected="true" aria-controls="matrix" data-tab="matrix" data-i18n="toolkit.tabs.matrix">Literature matrix</button>
+          <button class="tab" type="button" id="tab-sampling" role="tab" aria-selected="false" aria-controls="sampling" data-tab="sampling" data-i18n="toolkit.tabs.sampling">Sample size</button>
+          <button class="tab" type="button" id="tab-abstract" role="tab" aria-selected="false" aria-controls="abstract" data-tab="abstract" data-i18n="toolkit.tabs.abstract">Abstract forge</button>
+          <button class="tab" type="button" id="tab-library" role="tab" aria-selected="false" aria-controls="library" data-tab="library" data-i18n="toolkit.tabs.library">Reading room</button>
+        </div>
+
+        <section class="panel is-active" id="matrix" role="tabpanel" aria-labelledby="tab-matrix">
+          <div class="panel-head">
+            <div>
+              <h2 data-i18n="toolkit.matrix.title">A matrix that earns its keep.</h2>
+              <p data-i18n="toolkit.matrix.lead">Record what each source argues, how it knows, and what it cannot tell you. The last column is where the gap becomes visible.</p>
+            </div>
+            <span class="matrix-saved" data-i18n="toolkit.matrix.saved">Saved in this browser</span>
+          </div>
+
+          <form class="matrix-form" id="matrix-form">
+            <div class="field">
+              <label for="matrix-author" data-i18n="toolkit.matrix.author">Author &amp; year</label>
+              <input id="matrix-author" type="text" autocomplete="off">
+            </div>
+            <div class="field">
+              <label for="matrix-title" data-i18n="toolkit.matrix.sourceTitle">Title</label>
+              <input id="matrix-title" type="text" autocomplete="off">
+            </div>
+            <div class="field">
+              <label for="matrix-method" data-i18n="toolkit.matrix.method">Method or evidence</label>
+              <input id="matrix-method" type="text" autocomplete="off">
+            </div>
+            <div class="field">
+              <label for="matrix-relevance" data-i18n="toolkit.matrix.relevance">Relevance</label>
+              <select id="matrix-relevance">
+                <option value="high" data-i18n="toolkit.matrix.high">High</option>
+                <option value="medium" data-i18n="toolkit.matrix.medium">Medium</option>
+                <option value="low" data-i18n="toolkit.matrix.low">Low</option>
+              </select>
+            </div>
+            <div class="field field--full">
+              <label for="matrix-finding" data-i18n="toolkit.matrix.finding">Key finding</label>
+              <textarea id="matrix-finding" rows="2"></textarea>
+            </div>
+            <div class="field field--full">
+              <label for="matrix-use" data-i18n="toolkit.matrix.use">How you will use it</label>
+              <textarea id="matrix-use" rows="2"></textarea>
+            </div>
+            <div class="matrix-form__actions">
+              <button class="btn btn--primary btn--small" type="submit" data-i18n="toolkit.matrix.add">Add to matrix</button>
+              <button class="btn btn--outline btn--small" type="button" id="matrix-sample" data-i18n="toolkit.matrix.sample">Load an example</button>
+            </div>
+          </form>
+
+          <div class="matrix-toolbar">
+            <input id="matrix-search" type="search" data-i18n-placeholder="toolkit.matrix.searchPlaceholder" placeholder="Search authors, titles, methods…">
+            <select id="matrix-filter" data-i18n-aria="common.relevanceFilter">
+              <option value="" data-i18n="toolkit.matrix.all">All</option>
+              <option value="high" data-i18n="toolkit.matrix.high">High</option>
+              <option value="medium" data-i18n="toolkit.matrix.medium">Medium</option>
+              <option value="low" data-i18n="toolkit.matrix.low">Low</option>
+            </select>
+            <span class="matrix-count" id="matrix-count"></span>
+            <button class="btn btn--outline btn--small" type="button" id="matrix-export" data-i18n="toolkit.matrix.export">Export CSV</button>
+            <button class="btn btn--outline btn--small" type="button" id="matrix-clear" data-i18n="toolkit.matrix.clear">Clear matrix</button>
+          </div>
+
+          <div class="matrix-table-wrap">
+            <table class="matrix-table">
+              <thead>
+                <tr>
+                  <th data-i18n="toolkit.matrix.headers.source">Source</th>
+                  <th data-i18n="toolkit.matrix.headers.method">Evidence</th>
+                  <th data-i18n="toolkit.matrix.headers.finding">Finding</th>
+                  <th data-i18n="toolkit.matrix.headers.relevance">Relevance</th>
+                  <th data-i18n="toolkit.matrix.headers.use">Use</th>
+                  <th data-i18n="toolkit.matrix.headers.actions"></th>
+                </tr>
+              </thead>
+              <tbody id="matrix-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel" id="sampling" role="tabpanel" aria-labelledby="tab-sampling" hidden>
+          <div class="panel-head">
+            <div>
+              <h2 data-i18n="toolkit.sampling.title">How many is enough?</h2>
+              <p data-i18n="toolkit.sampling.lead">A proportion-based sample-size estimate for a survey. It gives a defensible starting point, not a substitute for a power analysis.</p>
+            </div>
+          </div>
+
+          <div class="tool-layout">
+            <div class="tool-card">
+              <div class="field">
+                <label for="sample-confidence" data-i18n="toolkit.sampling.confidence">Confidence level</label>
+                <select id="sample-confidence">
+                  <option value="1.645">90%</option>
+                  <option value="1.96" selected>95%</option>
+                  <option value="2.576">99%</option>
+                </select>
+              </div>
+
+              <div class="range-field">
+                <div class="range-field__head"><label for="sample-margin" data-i18n="toolkit.sampling.margin">Margin of error</label><output id="sample-margin-out">5%</output></div>
+                <input id="sample-margin" type="range" min="1" max="10" step="0.5" value="5">
+              </div>
+
+              <div class="range-field">
+                <div class="range-field__head"><label for="sample-proportion" data-i18n="toolkit.sampling.proportion">Expected proportion</label><output id="sample-proportion-out">50%</output></div>
+                <input id="sample-proportion" type="range" min="10" max="90" step="1" value="50">
+              </div>
+
+              <div class="field">
+                <label for="sample-population" data-i18n="toolkit.sampling.population">Population size</label>
+                <input id="sample-population" type="number" min="1" step="1" inputmode="numeric">
+                <span class="field__hint" data-i18n="toolkit.sampling.populationHint">Leave blank for an unlimited population.</span>
+              </div>
+
+              <div class="range-field">
+                <div class="range-field__head"><label for="sample-deff" data-i18n="toolkit.sampling.designEffect">Design effect</label><output id="sample-deff-out">1.0</output></div>
+                <input id="sample-deff" type="range" min="1" max="3" step="0.1" value="1">
+                <span class="field__hint" data-i18n="toolkit.sampling.designHint">1.0 for a simple random sample; 1.5–2.0 for clustering.</span>
+              </div>
+
+              <div class="range-field">
+                <div class="range-field__head"><label for="sample-nonresponse" data-i18n="toolkit.sampling.nonresponse">Expected non-response</label><output id="sample-nonresponse-out">20%</output></div>
+                <input id="sample-nonresponse" type="range" min="0" max="40" step="1" value="20">
+              </div>
+
+              <button class="btn btn--outline btn--small" type="button" id="sample-reset" data-i18n="toolkit.sampling.reset">Reset</button>
+            </div>
+
+            <aside class="result-card">
+              <p class="result-card__label" data-i18n="toolkit.sampling.resultsTitle">The estimate</p>
+              <p class="result-number" id="sample-completed">385</p>
+              <p class="result-unit" data-i18n="toolkit.sampling.completed">Completed responses needed</p>
+              <div class="result-row"><span data-i18n="toolkit.sampling.base">Base sample (n₀)</span><strong id="sample-base">385</strong></div>
+              <div class="result-row"><span data-i18n="toolkit.sampling.adjusted">After finite-population correction</span><strong id="sample-adjusted">385</strong></div>
+              <div class="result-row"><span data-i18n="toolkit.sampling.designAdjusted">After design effect</span><strong id="sample-design">385</strong></div>
+              <div class="result-row"><span data-i18n="toolkit.sampling.invited">Invite approximately</span><strong id="sample-invited">481</strong></div>
+              <div class="formula" data-i18n="toolkit.sampling.formula">n₀ = z² · p(1 − p) / e²</div>
+              <p class="caveat" data-i18n="toolkit.sampling.caveat">This calculator is for a single proportion. It does not handle clustering, stratification, unequal selection, subgroup comparisons or power for an effect. For those, use a design-specific power analysis.</p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="panel" id="abstract" role="tabpanel" aria-labelledby="tab-abstract" hidden>
+          <div class="panel-head">
+            <div>
+              <h2 data-i18n="toolkit.abstract.title">Forge a structured abstract.</h2>
+              <p data-i18n="toolkit.abstract.lead">Write the five moves in plain language. The forge assembles them into a readable abstract and counts the words.</p>
+            </div>
+          </div>
+
+          <div class="tool-layout">
+            <form class="tool-card abstract-form" id="abstract-form">
+              <div class="field">
+                <label for="abstract-title" data-i18n="toolkit.abstract.titleLabel">Working title</label>
+                <input id="abstract-title" type="text" data-i18n-placeholder="toolkit.abstract.titlePlaceholder" autocomplete="off">
+              </div>
+              <div class="field">
+                <label for="abstract-context" data-i18n="toolkit.abstract.context">Context</label>
+                <textarea id="abstract-context" rows="2" data-i18n-placeholder="toolkit.abstract.contextHint"></textarea>
+              </div>
+              <div class="field">
+                <label for="abstract-gap" data-i18n="toolkit.abstract.gap">Gap</label>
+                <textarea id="abstract-gap" rows="2" data-i18n-placeholder="toolkit.abstract.gapHint"></textarea>
+              </div>
+              <div class="field">
+                <label for="abstract-approach" data-i18n="toolkit.abstract.approach">Approach</label>
+                <textarea id="abstract-approach" rows="2" data-i18n-placeholder="toolkit.abstract.approachHint"></textarea>
+              </div>
+              <div class="field">
+                <label for="abstract-finding" data-i18n="toolkit.abstract.finding">Finding</label>
+                <textarea id="abstract-finding" rows="2" data-i18n-placeholder="toolkit.abstract.findingHint"></textarea>
+              </div>
+              <div class="field">
+                <label for="abstract-implication" data-i18n="toolkit.abstract.implication">Implication</label>
+                <textarea id="abstract-implication" rows="2" data-i18n-placeholder="toolkit.abstract.implicationHint"></textarea>
+              </div>
+              <div class="action-row">
+                <button class="btn btn--primary btn--small" type="submit" data-i18n="toolkit.abstract.generate">Forge abstract</button>
+                <button class="btn btn--outline btn--small" type="button" id="abstract-example" data-i18n="toolkit.abstract.example">Load an example</button>
+                <button class="btn btn--outline btn--small" type="button" id="abstract-clear" data-i18n="toolkit.abstract.clear">Clear</button>
+              </div>
+            </form>
+
+            <aside class="abstract-output" id="abstract-output">
+              <div class="abstract-output__head">
+                <span data-i18n="toolkit.abstract.outputTitle">Structured abstract</span>
+                <span id="abstract-words"></span>
+              </div>
+              <div class="abstract-output__empty" id="abstract-empty" data-i18n="toolkit.abstract.empty">Complete the five fields, then forge the abstract.</div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="panel" id="library" role="tabpanel" aria-labelledby="tab-library" hidden>
+          <div class="panel-head library-head">
+            <div>
+              <h2 data-i18n="toolkit.library.title">A small shelf for the long work.</h2>
+              <p data-i18n="toolkit.library.lead">Eight books and essays that repay rereading. Not a canon — a working shelf.</p>
+            </div>
+          </div>
+          <div class="library" id="library-grid"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <img class="footer__mark" src="assets/img/brand/logo-mark.svg" alt="" width="58" height="58">
+          <div>
+            <span class="footer__name" data-i18n="common.brandName">High Table Research Department</span>
+            <p class="footer__tagline" data-i18n="common.footerTagline">A working atelier for the life of the mind — from first question to final defence.</p>
+          </div>
+        </div>
+        <div>
+          <p class="footer__heading" data-i18n="common.footerExplore">The atelier</p>
+          <nav class="footer__nav" data-i18n-aria="common.footerNavLabel">
+            <a href="index.html#chain" data-i18n="common.navChain">Full chain</a>
+            <a href="studio.html" data-i18n="common.navStudio">Research Studio</a>
+            <a href="toolkit.html" data-i18n="common.navToolkit">Toolkit</a>
+            <a href="papers.html" data-i18n="common.navPapers">Papers</a>
+            <a href="notes.html" data-i18n="common.navNotes">Field Notes</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__heading" data-i18n="common.footerStatementTitle">A note on what this is</p>
+          <p class="footer__statement" data-i18n="common.footerStatement">This site is an educational atelier. It supports your judgement; it does not replace supervision, ethics review, or professional advice.</p>
+          <p class="footer__note" data-i18n="common.footerNote">No accounts, no tracking. Your notes stay in this browser.</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="common.footerRights">© 2026 High Table Research Department</span>
+        <span data-i18n="common.footerMade">Made for the long work · EN / 中文 / FR</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n-en.js"></script>
+  <script src="assets/js/i18n-zh.js"></script>
+  <script src="assets/js/i18n-fr.js"></script>
+  <script src="assets/js/field-data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/toolkit.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060e19"/>
+      <stop offset=".55" stop-color="#13253b"/>
+      <stop offset="1" stop-color="#302719"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".75" cy=".28" r=".65">
+      <stop offset="0" stop-color="#c8aa78" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#c8aa78" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#night)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g fill="none" stroke="#c8aa78" stroke-opacity=".3">
+    <path d="M760 630V250c0-94 76-170 170-170s170 76 170 170v380"/>
+    <path d="M808 630V258c0-68 55-123 123-123s123 55 123 123v372"/>
+    <path d="M0 512h1200"/>
+  </g>
+  <g transform="translate(88 84)">
+    <rect width="92" height="92" rx="18" fill="#07101b"/>
+    <rect x="4" y="4" width="84" height="84" rx="14" fill="none" stroke="#b99a68" stroke-opacity=".5"/>
+    <text x="28" y="59" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#e8d8b8">H</text>
+    <text x="55" y="59" text-anchor="middle" font-family="Georgia, serif" font-size="42" fill="#e8d8b8">T</text>
+    <ellipse cx="47" cy="46" rx="33" ry="12" transform="rotate(-13 47 46)" fill="none" stroke="#c8aa78" stroke-width="1"/>
+    <path d="M20 67c11 5 24 5 35 0" fill="none" stroke="#c8aa78" stroke-opacity=".7"/>
+  </g>
+  <text x="88" y="258" font-family="Helvetica, Arial, sans-serif" font-size="14" letter-spacing="6" fill="#c8aa78">AN INDEPENDENT RESEARCH ATELIER</text>
+  <text x="84" y="340" font-family="Georgia, 'Times New Roman', serif" font-size="82" letter-spacing="2" fill="#f4efe3">HIGH TABLE</text>
+  <text x="88" y="394" font-family="Helvetica, Arial, sans-serif" font-size="18" letter-spacing="7" fill="#d8c6a4">RESEARCH DEVELOPMENT DEPARTMENT</text>
+  <text x="88" y="474" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="32" fill="#f4efe3">From first question to final defence.</text>
+  <text x="88" y="560" font-family="Helvetica, Arial, sans-serif" font-size="13" letter-spacing="4" fill="#b9a789">QUESTION · EVIDENCE · METHOD · ETHICS · ARGUMENT</text>
+  <path d="M88 522h460" stroke="#9f713d" stroke-width="2"/>
+  <path d="M1080 94l5 13 13 5-13 5-5 13-5-13-13-5 13-5z" fill="#f2e6cd"/>
+</svg>

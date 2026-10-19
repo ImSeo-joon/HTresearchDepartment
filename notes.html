@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Field Notes — High Table Research Department</title>
+  <meta name="description" content="Essays and a working lexicon on questions, design, ethics and writing.">
+  <meta name="theme-color" content="#07101b">
+  <meta property="og:title" content="Field Notes — High Table Research Department">
+  <meta property="og:description" content="The craft is in the middle: essays on questions, design, ethics and writing.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/brand/og-cover.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/brand/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/brand/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+  <meta name="application-name" content="High Table Research Department">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="High Table">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="notes">
+  <a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
+
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a class="brand" href="index.html" aria-label="High Table Research Department" data-i18n-aria="common.brandName">
+        <img class="brand__mark" src="assets/img/brand/logo-mark.svg" alt="" width="44" height="44">
+        <span class="brand__text">
+          <span class="brand__name" data-i18n="common.brandName">High Table Research Department</span>
+          <span class="brand__latin" data-i18n="common.brandLatin">RESEARCH DEVELOPMENT DEPARTMENT</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-i18n="common.menu">Menu</button>
+      <div class="masthead__menu" id="site-menu">
+        <nav class="nav" aria-label="Primary navigation" data-i18n-aria="common.navLabel">
+          <a href="index.html" data-nav="home" data-i18n="common.navHome">The Department</a>
+          <a href="index.html#chain" data-i18n="common.navChain">Full chain</a>
+          <a href="studio.html" data-nav="studio" data-i18n="common.navStudio">Research Studio</a>
+          <a href="toolkit.html" data-nav="toolkit" data-i18n="common.navToolkit">Toolkit</a>
+          <a href="papers.html" data-nav="papers" data-i18n="common.navPapers">Papers</a>
+          <a href="notes.html" data-nav="notes" data-i18n="common.navNotes">Field Notes</a>
+        </nav>
+        <div class="lang" role="group" aria-label="Language" data-i18n-aria="common.language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+          <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="page-hero__inner">
+          <div>
+            <p class="eyebrow eyebrow--light" data-i18n="notes.hero.eyebrow">Field Notes</p>
+            <h1 data-i18n="notes.hero.title">The craft is in the middle.</h1>
+            <p class="page-hero__lead" data-i18n="notes.hero.lead">Four essays on the parts of research that rarely fit on a slide: the question behind the question, design as a chain of commitments, ethics before the form, and writing as thinking.</p>
+          </div>
+          <p class="page-hero__note"><strong>HT / NOTES</strong><span data-i18n="notes.hero.note">Long-form notes, written to be read slowly.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-i18n="notes.indexKicker">The essays</p>
+          <h2 data-i18n="notes.indexTitle">Four working notes.</h2>
+        </div>
+        <div class="essays" id="essays-grid"></div>
+      </div>
+    </section>
+
+    <section class="lexicon-section section--paper-deep" id="lexicon">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-i18n="notes.lexicon.kicker">The working lexicon</p>
+          <h2 data-i18n="notes.lexicon.title">Words we use precisely.</h2>
+          <p class="section-head__lead" data-i18n="notes.lexicon.lead">Twelve terms that do a lot of work in research conversations. Search the list, or open a term to read the working definition.</p>
+        </div>
+        <div class="lexicon-toolbar">
+          <input class="lexicon-search" id="lexicon-search" type="search" data-i18n-placeholder="notes.lexicon.searchPlaceholder" placeholder="Search the lexicon…">
+          <span class="lexicon-count" id="lexicon-count"></span>
+        </div>
+        <div class="lexicon" id="lexicon-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="essay-dialog" id="essay-dialog" aria-labelledby="essay-dialog-title">
+    <div class="essay-dialog__inner">
+      <button class="essay-dialog__close" type="button" id="essay-close" data-i18n-aria="common.closeDialog" aria-label="Close dialog">×</button>
+      <div id="essay-dialog-content"></div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <img class="footer__mark" src="assets/img/brand/logo-mark.svg" alt="" width="58" height="58">
+          <div>
+            <span class="footer__name" data-i18n="common.brandName">High Table Research Department</span>
+            <p class="footer__tagline" data-i18n="common.footerTagline">A working atelier for the life of the mind — from first question to final defence.</p>
+          </div>
+        </div>
+        <div>
+          <p class="footer__heading" data-i18n="common.footerExplore">The atelier</p>
+          <nav class="footer__nav" data-i18n-aria="common.footerNavLabel">
+            <a href="index.html#chain" data-i18n="common.navChain">Full chain</a>
+            <a href="studio.html" data-i18n="common.navStudio">Research Studio</a>
+            <a href="toolkit.html" data-i18n="common.navToolkit">Toolkit</a>
+            <a href="papers.html" data-i18n="common.navPapers">Papers</a>
+            <a href="notes.html" data-i18n="common.navNotes">Field Notes</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__heading" data-i18n="common.footerStatementTitle">A note on what this is</p>
+          <p class="footer__statement" data-i18n="common.footerStatement">This site is an educational atelier. It supports your judgement; it does not replace supervision, ethics review, or professional advice.</p>
+          <p class="footer__note" data-i18n="common.footerNote">No accounts, no tracking. Your notes stay in this browser.</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="common.footerRights">© 2026 High Table Research Department</span>
+        <span data-i18n="common.footerMade">Made for the long work · EN / 中文 / FR</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n-en.js"></script>
+  <script src="assets/js/i18n-zh.js"></script>
+  <script src="assets/js/i18n-fr.js"></script>
+  <script src="assets/js/field-data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/notes.js"></script>
+</body>
+</html>

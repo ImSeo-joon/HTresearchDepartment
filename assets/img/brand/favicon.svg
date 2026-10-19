@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="13" fill="#07101b"/>
+  <rect x="4" y="4" width="56" height="56" rx="10" fill="none" stroke="#c8aa78" stroke-opacity=".55"/>
+  <text x="32" y="45" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#e8d8b8">HT</text>
+  <path d="M12 50c11 5 29 5 40 0" fill="none" stroke="#c8aa78" stroke-opacity=".7" stroke-width="1.2"/>
+</svg>

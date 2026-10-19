@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Research Studio — High Table Research Department</title>
+  <meta name="description" content="Compose a research charter, timeline, feasibility check and risk register from your question, evidence base and constraints.">
+  <meta name="theme-color" content="#07101b">
+  <meta property="og:title" content="Research Studio — High Table Research Department">
+  <meta property="og:description" content="A working charter for the middle of the project.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/brand/og-cover.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/brand/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/brand/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+  <meta name="application-name" content="High Table Research Department">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="High Table">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="studio">
+  <a class="skip-link" href="#main" data-i18n="common.skip">Skip to content</a>
+
+  <header class="masthead">
+    <div class="masthead__inner">
+      <a class="brand" href="index.html" aria-label="High Table Research Department" data-i18n-aria="common.brandName">
+        <img class="brand__mark" src="assets/img/brand/logo-mark.svg" alt="" width="44" height="44">
+        <span class="brand__text">
+          <span class="brand__name" data-i18n="common.brandName">High Table Research Department</span>
+          <span class="brand__latin" data-i18n="common.brandLatin">RESEARCH DEVELOPMENT DEPARTMENT</span>
+        </span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-i18n="common.menu">Menu</button>
+      <div class="masthead__menu" id="site-menu">
+        <nav class="nav" aria-label="Primary navigation" data-i18n-aria="common.navLabel">
+          <a href="index.html" data-nav="home" data-i18n="common.navHome">The Department</a>
+          <a href="index.html#chain" data-i18n="common.navChain">Full chain</a>
+          <a href="studio.html" data-nav="studio" data-i18n="common.navStudio">Research Studio</a>
+          <a href="toolkit.html" data-nav="toolkit" data-i18n="common.navToolkit">Toolkit</a>
+          <a href="papers.html" data-nav="papers" data-i18n="common.navPapers">Papers</a>
+          <a href="notes.html" data-nav="notes" data-i18n="common.navNotes">Field Notes</a>
+        </nav>
+        <div class="lang" role="group" aria-label="Language" data-i18n-aria="common.language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="zh" aria-pressed="false">中文</button>
+          <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="page-hero__inner">
+          <div>
+            <p class="eyebrow eyebrow--light" data-i18n="studio.hero.eyebrow">The simulator</p>
+            <h1 data-i18n="studio.hero.title">Compose a research charter.</h1>
+            <p class="page-hero__lead" data-i18n="studio.hero.lead">A working document for the middle of the project: a question ladder, a design that fits your constraints, a timeline, a feasibility check and the risks you should name early.</p>
+          </div>
+          <p class="page-hero__note"><strong>HT / STUDIO</strong><span data-i18n="studio.hero.note">Nothing is saved to a server. Your inputs stay in this tab.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wizard-section" id="studio-form">
+      <div class="wrap">
+        <div class="wizard">
+          <div class="wizard-card">
+            <div class="wizard-progress" aria-hidden="true">
+              <div class="wizard-progress__item is-active" data-progress="0"><span>01</span><b data-i18n="studio.steps.0.name">Terrain</b></div>
+              <div class="wizard-progress__item" data-progress="1"><span>02</span><b data-i18n="studio.steps.1.name">Evidence</b></div>
+              <div class="wizard-progress__item" data-progress="2"><span>03</span><b data-i18n="studio.steps.2.name">Constraints</b></div>
+              <div class="wizard-progress__item" data-progress="3"><span>04</span><b data-i18n="studio.steps.3.name">Compose</b></div>
+            </div>
+
+            <form id="studio-form-element" novalidate>
+              <section class="form-step is-active" data-step="0">
+                <h2 data-i18n="studio.form.step1Title">What are you trying to understand?</h2>
+                <p class="form-step__lead" data-i18n="studio.form.step1Lead">Start with a working topic, not a polished proposal. The studio will help you turn it into a ladder of questions.</p>
+
+                <div class="field" id="topic-field">
+                  <label for="studio-topic" data-i18n="studio.form.topicLabel">Working topic or question</label>
+                  <textarea id="studio-topic" rows="3" data-i18n-placeholder="studio.form.topicPlaceholder"></textarea>
+                  <span class="field__hint" data-i18n="studio.form.topicHint">A phrase or a full sentence. Replace the example with your own.</span>
+                </div>
+
+                <fieldset class="fieldset">
+                  <legend data-i18n="studio.form.disciplineLegend">Discipline</legend>
+                  <div class="choice-grid" id="choice-discipline" data-choice-group="discipline"></div>
+                </fieldset>
+
+                <fieldset class="fieldset" id="engineering-fieldset" hidden>
+                  <legend data-i18n="studio.form.engineeringLegend">Engineering field</legend>
+                  <p class="field__hint" data-i18n="studio.form.engineeringHint">Engineering is treated as a family of fields. Choose the closest subfield; the charter will add a domain-specific note.</p>
+                  <div class="choice-groups" id="choice-engineeringField" data-choice-group="engineeringField"></div>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                  <legend data-i18n="studio.form.aimLegend">Primary ambition</legend>
+                  <div class="choice-grid" id="choice-aim" data-choice-group="aim"></div>
+                </fieldset>
+              </section>
+
+              <section class="form-step" data-step="1">
+                <h2 data-i18n="studio.form.step2Title">What evidence could answer it?</h2>
+                <p class="form-step__lead" data-i18n="studio.form.step2Lead">Choose the evidence you can actually access and the degree of control the question can bear.</p>
+
+                <fieldset class="fieldset">
+                  <legend data-i18n="studio.form.evidenceLegend">Evidence base</legend>
+                  <div class="choice-grid" id="choice-evidence" data-choice-group="evidence"></div>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                  <legend data-i18n="studio.form.settingLegend">Setting</legend>
+                  <div class="choice-grid" id="choice-setting" data-choice-group="setting"></div>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                  <legend data-i18n="studio.form.horizonLegend">Horizon</legend>
+                  <div class="choice-grid" id="choice-horizon" data-choice-group="horizon"></div>
+                </fieldset>
+              </section>
+
+              <section class="form-step" data-step="2">
+                <h2 data-i18n="studio.form.step3Title">What are the real constraints?</h2>
+                <p class="form-step__lead" data-i18n="studio.form.step3Lead">A design that ignores constraints is a fantasy with a methods section.</p>
+
+                <fieldset class="fieldset">
+                  <legend data-i18n="studio.form.teamLegend">Team</legend>
+                  <div class="choice-grid" id="choice-team" data-choice-group="team"></div>
+                </fieldset>
+
+                <fieldset class="fieldset">
+                  <legend data-i18n="studio.form.riskLegend">Risk appetite</legend>
+                  <div class="choice-grid" id="choice-risk" data-choice-group="risk"></div>
+                </fieldset>
+
+                <div class="field">
+                  <label for="studio-constraint"><span data-i18n="studio.form.constraintLabel">One constraint you cannot ignore</span> <span style="font-weight:400;color:var(--muted);letter-spacing:0;text-transform:none" data-i18n="common.optional">optional</span></label>
+                  <textarea id="studio-constraint" rows="3" data-i18n-placeholder="studio.form.constraintPlaceholder"></textarea>
+                  <span class="field__hint" data-i18n="studio.form.constraintHint">Optional. Access, funding, language, data permissions, caring responsibilities.</span>
+                </div>
+              </section>
+
+              <section class="form-step" data-step="3">
+                <h2 data-i18n="studio.form.step4Title">Ready to compose.</h2>
+                <p class="form-step__lead" data-i18n="studio.form.step4Lead">Check the brief below. The charter will be generated in this browser and can be downloaded as Markdown.</p>
+                <div class="design-card" style="margin-top:28px">
+                  <h3 id="compose-topic">—</h3>
+                  <p id="compose-meta">—</p>
+                </div>
+                <p class="field__hint" style="margin-top:18px" data-i18n="studio.hero.note">Nothing is saved to a server. Your inputs stay in this tab.</p>
+              </section>
+            </form>
+
+            <div class="wizard-nav">
+              <button class="btn btn--outline btn--small wizard-nav__spacer" type="button" id="wizard-prev" data-i18n="studio.form.back">Back</button>
+              <button class="btn btn--primary btn--small" type="button" id="wizard-next" data-i18n="studio.form.next">Next</button>
+              <button class="btn btn--primary btn--small" type="button" id="wizard-compose" data-i18n="studio.form.compose" hidden>Compose the charter</button>
+            </div>
+          </div>
+
+          <aside class="wizard-aside" data-i18n-aria="common.researchBrief">
+            <p class="wizard-aside__label" data-i18n="studio.form.summaryTitle">The brief</p>
+            <dl style="margin:0">
+              <div class="brief-row"><dt data-i18n="studio.form.summaryTopic">Topic</dt><dd id="brief-topic">—</dd></div>
+              <div class="brief-row"><dt data-i18n="studio.form.summaryDiscipline">Discipline</dt><dd id="brief-discipline">—</dd></div>
+              <div class="brief-row" id="brief-engineering-row"><dt data-i18n="studio.form.summaryEngineering">Engineering field</dt><dd id="brief-engineering">—</dd></div>
+              <div class="brief-row"><dt data-i18n="studio.form.summaryAim">Ambition</dt><dd id="brief-aim">—</dd></div>
+              <div class="brief-row"><dt data-i18n="studio.form.summaryEvidence">Evidence</dt><dd id="brief-evidence">—</dd></div>
+              <div class="brief-row"><dt data-i18n="studio.form.summarySetting">Setting</dt><dd id="brief-setting">—</dd></div>
+              <div class="brief-row"><dt data-i18n="studio.form.summaryHorizon">Horizon</dt><dd id="brief-horizon">—</dd></div>
+              <div class="brief-row"><dt data-i18n="studio.form.summaryTeam">Team</dt><dd id="brief-team">—</dd></div>
+              <div class="brief-row"><dt data-i18n="studio.form.summaryRisk">Risk</dt><dd id="brief-risk">—</dd></div>
+            </dl>
+            <p class="wizard-aside__note" data-i18n="studio.charter.feasibilityNote">A heuristic, not a judgement of your capability. It shows where the design is under strain.</p>
+          </aside>
+        </div>
+
+        <div class="charter" id="charter" hidden aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section section--dark viva-section" id="viva">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker" data-i18n="studio.viva.kicker">The defence room</p>
+          <h2 data-i18n="studio.viva.title">Rehearse the claim, not the script.</h2>
+          <p class="section-head__lead" data-i18n="studio.viva.lead">Eight questions examiners use to find the load-bearing assumptions. Reveal the coaching note, then mark what needs another pass.</p>
+        </div>
+        <div class="viva-toolbar">
+          <button class="btn btn--light btn--small" type="button" id="viva-shuffle" data-i18n="studio.viva.shuffle">Shuffle</button>
+          <button class="btn btn--light btn--small" type="button" id="viva-reset" data-i18n="studio.viva.reset">Reset deck</button>
+          <div class="viva-progress" aria-hidden="true"><span id="viva-progress-bar"></span></div>
+          <span class="viva-progress-label" id="viva-progress-label"></span>
+        </div>
+        <div class="viva-grid" id="viva-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <img class="footer__mark" src="assets/img/brand/logo-mark.svg" alt="" width="58" height="58">
+          <div>
+            <span class="footer__name" data-i18n="common.brandName">High Table Research Department</span>
+            <p class="footer__tagline" data-i18n="common.footerTagline">A working atelier for the life of the mind — from first question to final defence.</p>
+          </div>
+        </div>
+        <div>
+          <p class="footer__heading" data-i18n="common.footerExplore">The atelier</p>
+          <nav class="footer__nav" data-i18n-aria="common.footerNavLabel">
+            <a href="index.html#chain" data-i18n="common.navChain">Full chain</a>
+            <a href="studio.html" data-i18n="common.navStudio">Research Studio</a>
+            <a href="toolkit.html" data-i18n="common.navToolkit">Toolkit</a>
+            <a href="papers.html" data-i18n="common.navPapers">Papers</a>
+            <a href="notes.html" data-i18n="common.navNotes">Field Notes</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__heading" data-i18n="common.footerStatementTitle">A note on what this is</p>
+          <p class="footer__statement" data-i18n="common.footerStatement">This site is an educational atelier. It supports your judgement; it does not replace supervision, ethics review, or professional advice.</p>
+          <p class="footer__note" data-i18n="common.footerNote">No accounts, no tracking. Your notes stay in this browser.</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span data-i18n="common.footerRights">© 2026 High Table Research Department</span>
+        <span data-i18n="common.footerMade">Made for the long work · EN / 中文 / FR</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n-en.js"></script>
+  <script src="assets/js/i18n-zh.js"></script>
+  <script src="assets/js/i18n-fr.js"></script>
+  <script src="assets/js/field-data.js"></script>
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/studio.js"></script>
+</body>
+</html>

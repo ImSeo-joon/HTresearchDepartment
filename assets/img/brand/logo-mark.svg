@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="High Table Research Department">
+  <defs>
+    <linearGradient id="champagne" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2e6cd"/>
+      <stop offset=".52" stop-color="#c8aa78"/>
+      <stop offset="1" stop-color="#e8d8b8"/>
+    </linearGradient>
+    <clipPath id="round">
+      <rect width="160" height="160" rx="30"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect width="160" height="160" fill="#07101b"/>
+    <rect x="7" y="7" width="146" height="146" rx="25" fill="none" stroke="#b99a68" stroke-opacity=".34"/>
+    <circle cx="80" cy="77" r="60" fill="none" stroke="#b99a68" stroke-opacity=".1"/>
+    <g fill="url(#champagne)">
+      <text x="49" y="99" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="70" font-weight="400">H</text>
+      <text x="91" y="99" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="70" font-weight="400">T</text>
+    </g>
+    <ellipse cx="81" cy="77" rx="57" ry="20" transform="rotate(-13 81 77)" fill="none" stroke="#c8aa78" stroke-opacity=".85" stroke-width="1.4"/>
+    <path d="M36 111c14 8 27 12 44 12s30-4 44-12" fill="none" stroke="#c8aa78" stroke-opacity=".75" stroke-width="1.5"/>
+    <path d="M44 105c11 5 23 7 36 7s25-2 36-7" fill="none" stroke="#c8aa78" stroke-opacity=".45" stroke-width="1.1"/>
+    <path d="M119 29l3.6 9.4 9.4 3.6-9.4 3.6-3.6 9.4-3.6-9.4-9.4-3.6 9.4-3.6z" fill="#f2e6cd"/>
+    <circle cx="80" cy="136" r="1.6" fill="#c8aa78"/>
+  </g>
+</svg>
