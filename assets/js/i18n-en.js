@@ -4,7 +4,7 @@ I18N.en = {
   meta: {
     home: {
       title: "High Table Research Department — from first question to final defence",
-      description: "An engineering-led research atelier with 28 subfields, 81 recent papers, an interactive studio and a working toolkit in English, Chinese and French."
+      description: "An engineering-led research atelier with 28 subfields, 105 recent papers, an interactive studio and a working toolkit in English, Chinese, French and Japanese."
     },
     studio: {
       title: "Research Studio — High Table Research Department",
@@ -20,7 +20,7 @@ I18N.en = {
     },
     papers: {
       title: "Paper Index — High Table Research Department",
-      description: "A living index of 81 recent and load-bearing papers across 28 engineering subfields, with notes, citations and literature-matrix export."
+      description: "A living index of 105 recent and load-bearing papers across 28 engineering subfields, with notes, citations and literature-matrix export."
     },
     notfound: {
       title: "Page not found — High Table Research Department",
@@ -60,7 +60,7 @@ I18N.en = {
     footerStatement: "This site is an educational atelier. It supports your judgement; it does not replace supervision, ethics review, or professional advice.",
     footerNote: "No accounts, no tracking. Your notes stay in this browser.",
     footerRights: "© 2026 High Table Research Department",
-    footerMade: "Made for the long work · EN / 中文 / FR",
+    footerMade: "Made for the long work · EN / 中文 / FR / 日本語",
     back: "Back",
     next: "Next",
     previous: "Previous",
@@ -97,7 +97,7 @@ I18N.en = {
     },
     stats: [
       { value: "28", label: "engineering subfields" },
-      { value: "81", label: "indexed papers" },
+      { value: "105", label: "indexed papers" },
       { value: "2026", label: "latest paper" }
     ],
     marquee: ["Question", "Literature", "Design", "Ethics", "Evidence", "Analysis", "Writing", "Defence", "Impact"],

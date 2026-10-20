@@ -1,4 +1,4 @@
-const CACHE_NAME = "htrd-static-v6";
+const CACHE_NAME = "htrd-static-v14";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -12,8 +12,10 @@ const CORE_ASSETS = [
   "./assets/js/i18n-en.js",
   "./assets/js/i18n-zh.js",
   "./assets/js/i18n-fr.js",
+  "./assets/js/i18n-ja.js",
   "./assets/js/field-data.js",
   "./assets/js/paper-data.js",
+  "./assets/js/paper-i18n-ja.js",
   "./assets/js/site.js",
   "./assets/js/home.js",
   "./assets/js/studio.js",

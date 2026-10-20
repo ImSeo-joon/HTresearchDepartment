@@ -2,7 +2,7 @@
   "id": "./",
   "name": "High Table Research Department",
   "short_name": "High Table",
-  "description": "A full-chain research atelier for engineering and inquiry: studio, methods, paper index and field notes.",
+  "description": "A full-chain engineering research atelier: 28 subfields, 105 recent papers, studio, methods and field notes.",
   "lang": "en",
   "dir": "ltr",
   "start_url": "./index.html",

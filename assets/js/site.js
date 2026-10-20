@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const SUPPORTED = ["en", "zh", "fr"];
+  const SUPPORTED = ["en", "zh", "fr", "ja"];
   const DEFAULT_LANG = "en";
   const LANG_KEY = "htrd.lang";
   let deferredInstallPrompt = null;

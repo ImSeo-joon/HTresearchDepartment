@@ -1069,6 +1069,318 @@ window.PAPER_INDEX = [
       "跨领域梳理人工智能在科学发现中的作用。重点读预测、解释与真正的新假设生成之间的区别。",
       "Un compte rendu transdisciplinaire de l’IA pour la découverte ; lisez la distinction entre prédiction, explication et nouvelle hypothèse."
     ]
+  ),
+  paperEntry(
+    "deepseek-v3", "ai_core", "2024-12-27", "method",
+    "DeepSeek-V3 Technical Report",
+    "DeepSeek-AI, Liu, A., Feng, B., et al.",
+    "DeepSeek-AI et al.", "arXiv",
+    "https://arxiv.org/abs/2412.19437",
+    ["mixture of experts", "pre-training", "LLM"],
+    [
+      "A detailed technical report on a large mixture-of-experts model, including training infrastructure, data and evaluation. Read for the engineering choices and the limited disclosure of data.",
+      "一份关于大规模混合专家模型的技术报告，涵盖训练基础设施、数据与评估。重点读工程选择，以及数据披露的边界。",
+      "Un rapport technique détaillé sur un grand modèle à mélange d’experts ; lisez l’infrastructure, les données et les limites de divulgation."
+    ], true
+  ),
+  paperEntry(
+    "qwen25", "generative_ai", "2024-12-19", "method",
+    "Qwen2.5 Technical Report",
+    "Qwen Team, Yang, A., et al.",
+    "Qwen Team", "arXiv",
+    "https://arxiv.org/abs/2412.15115",
+    ["LLM", "multilingual", "post-training"],
+    [
+      "A model-family report focused on data scaling, multilingual coverage and post-training. Read for the evaluation portfolio and the gaps that remain in reproducibility.",
+      "面向数据扩展、多语言覆盖与后训练的模型家族报告。重点读评估组合，以及可复现性上的缺口。",
+      "Un rapport de famille de modèles sur les données, le multilingue et le post-entraînement ; lisez l’évaluation et les limites de reproductibilité."
+    ]
+  ),
+  paperEntry(
+    "gemma2", "generative_ai", "2024-07-31", "method",
+    "Gemma 2: Improving Open Language Models at a Practical Size",
+    "Gemma Team, Rivière, M., Pathak, S., et al.",
+    "Gemma Team", "arXiv",
+    "https://arxiv.org/abs/2408.00118",
+    ["open models", "efficiency", "LLM"],
+    [
+      "An open-model report balancing capability and inference cost. Read for the architectural choices, the safety evaluation and the meaning of “practical size”.",
+      "在能力与推理成本之间取得平衡的开放模型报告。重点读架构选择、安全评估，以及“实用规模”的含义。",
+      "Un rapport de modèle ouvert équilibrant capacité et coût d’inférence ; lisez l’architecture, la sûreté et la notion de taille pratique."
+    ]
+  ),
+  paperEntry(
+    "self-rag", "nlp", "2023-10-17", "method",
+    "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "Asai, A., Wu, Z., Wang, Y., et al.",
+    "Asai et al.", "ICLR 2024",
+    "https://arxiv.org/abs/2310.11511",
+    ["retrieval", "self-reflection", "generation"],
+    [
+      "Trains a model to decide when to retrieve and to critique its own evidence use. Read for the control tokens and the difficulty of evaluating self-critique.",
+      "训练模型决定何时检索，并批判性地检查自身对证据的使用。重点读控制标记与自评的评估难题。",
+      "Entraîne un modèle à décider quand chercher et à critiquer son usage des preuves ; lisez les jetons de contrôle et l’évaluation de l’auto-critique."
+    ]
+  ),
+  paperEntry(
+    "grounding-dino", "computer_vision", "2024-11-22", "method",
+    "Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection",
+    "Liu, S., Zeng, Z., Ren, T., et al.",
+    "Liu et al.", "ECCV 2024",
+    "https://doi.org/10.1007/978-3-031-72970-6_3",
+    ["open-set detection", "vision-language", "grounding"],
+    [
+      "Combines a DINO detector with language grounding for open-set detection. Read for the fusion design and the gap between benchmark phrases and messy real-world language.",
+      "把 DINO 检测器与语言 grounding 结合，实现开放集检测。重点读融合设计，以及基准短语与真实语言之间的差距。",
+      "Combine un détecteur DINO et un ancrage linguistique pour la détection ouverte ; lisez la fusion et l’écart avec le langage réel."
+    ]
+  ),
+  paperEntry(
+    "llava", "computer_vision", "2023-04-17", "method",
+    "Visual Instruction Tuning",
+    "Liu, H., Li, C., Wu, Q., & Lee, Y. J.",
+    "Liu et al.", "NeurIPS 2023",
+    "https://arxiv.org/abs/2304.08485",
+    ["multimodal", "instruction tuning", "vision-language"],
+    [
+      "Introduces visual instruction tuning for multimodal assistants. Read for the data-generation recipe and the evaluation limits of a small set of multimodal tasks.",
+      "为多模态助手引入视觉指令微调。重点读数据生成配方，以及小规模多模态任务评估的边界。",
+      "Introduit l’ajustement par instructions visuelles ; lisez la recette de données et les limites de l’évaluation multimodale."
+    ]
+  ),
+  paperEntry(
+    "florence2", "computer_vision", "2024-06-16", "method",
+    "Florence-2: Advancing a Unified Representation for a Variety of Vision Tasks",
+    "Xiao, B., Wu, H., Xu, W., et al.",
+    "Xiao et al.", "CVPR 2024",
+    "https://doi.org/10.1109/CVPR52733.2024.00461",
+    ["vision foundation model", "multitask", "unified representation"],
+    [
+      "A unified vision model trained across detection, captioning and grounding tasks. Read for the task formulation and the price of one model for many objectives.",
+      "跨检测、描述与 grounding 任务训练的统一视觉模型。重点读任务形式化，以及一个模型承担多目标的代价。",
+      "Un modèle visuel unifié pour détection, légendage et ancrage ; lisez la formulation des tâches et le coût de l’unification."
+    ]
+  ),
+  paperEntry(
+    "distserve", "computer_systems", "2024-01-18", "method",
+    "DistServe: Disaggregating Prefill and Decoding for Goodput-optimized Large Language Model Serving",
+    "Zhong, Y., Liu, S., Chen, J., et al.",
+    "Zhong et al.", "OSDI 2024",
+    "https://arxiv.org/abs/2401.09670",
+    ["LLM serving", "disaggregation", "goodput"],
+    [
+      "Separates prefill and decoding to optimise serving goodput. Read for the scheduling model and the communication cost of disaggregation.",
+      "分离预填充与解码以优化服务有效吞吐。重点读调度模型与解耦带来的通信成本。",
+      "Sépare prefill et décodage pour optimiser le goodput ; lisez l’ordonnancement et le coût de communication."
+    ]
+  ),
+  paperEntry(
+    "sglang", "computer_systems", "2023-12-12", "method",
+    "SGLang: Efficient Execution of Structured Language Model Programs",
+    "Zheng, L., Yin, L., Xie, Z., et al.",
+    "Zheng et al.", "SIGCOMM 2024",
+    "https://arxiv.org/abs/2312.07104",
+    ["structured generation", "runtime", "LLM serving"],
+    [
+      "A runtime for structured language-model programs with prefix reuse. Read for the programming model and the assumptions about repeated prompts.",
+      "面向结构化语言模型程序、支持前缀复用的运行时。重点读编程模型与对重复提示的假设。",
+      "Un runtime pour programmes structurés de modèles de langage avec réutilisation de préfixes ; lisez le modèle de programmation."
+    ]
+  ),
+  paperEntry(
+    "llumnix", "computer_systems", "2024-06-05", "method",
+    "Llumnix: Dynamic Scheduling for Large Language Model Serving",
+    "Sun, B., Huang, Z., Zhao, H., et al.",
+    "Sun et al.", "OSDI 2024",
+    "https://arxiv.org/abs/2406.03243",
+    ["scheduling", "LLM serving", "latency"],
+    [
+      "Adds dynamic request migration and scheduling to LLM serving. Read for the latency objective and the operational complexity it introduces.",
+      "为大模型服务加入动态请求迁移与调度。重点读时延目标，以及它引入的运维复杂度。",
+      "Ajoute migration et ordonnancement dynamiques au service de LLM ; lisez l’objectif de latence et la complexité opérationnelle."
+    ]
+  ),
+  paperEntry(
+    "llm-net-mgmt", "networks", "2025-04-25", "survey",
+    "A Survey on Large Language Models for Communication, Network, and Service Management",
+    "Boateng, G. O., Sami, H., Alagha, A., et al.",
+    "Boateng et al.", "IEEE COMST",
+    "https://doi.org/10.1109/COMST.2025.3564333",
+    ["network management", "service management", "LLM"],
+    [
+      "Maps LLM applications across communication and network service management. Read for the operational data and trust barriers that remain.",
+      "梳理大模型在通信与网络服务管理中的应用。重点读仍然存在的运维数据与信任障碍。",
+      "Cartographie les LLM pour la gestion des réseaux et services ; lisez les obstacles de données et de confiance."
+    ]
+  ),
+  paperEntry(
+    "llm-net-security", "cybersecurity", "2025-06-26", "survey",
+    "The Dual Role of Large Language Models in Network Security: Survey and Research Trends",
+    "Liu, H., Xue, J., Zhao, S., et al.",
+    "Liu et al.", "ACM SIGCOMM 2025",
+    "https://doi.org/10.1145/3733965.3733972",
+    ["network security", "LLM", "threat models"],
+    [
+      "Examines LLMs as both security tools and attack surfaces. Read for the dual-use framing and the evaluation gap between laboratory and network operations.",
+      "把大模型同时视为安全工具与攻击面。重点读双用途框架，以及实验室与网络运维之间的评估差距。",
+      "Examine les LLM comme outils et surfaces d’attaque ; lisez le cadrage dual et l’écart d’évaluation avec les opérations."
+    ]
+  ),
+  paperEntry(
+    "universal-adversarial", "cybersecurity", "2023-07-27", "method",
+    "Universal and Transferable Adversarial Attacks on Aligned Language Models",
+    "Zou, A., Wang, Z., Kolter, J. Z., & Fredrikson, M.",
+    "Zou et al.", "arXiv",
+    "https://arxiv.org/abs/2307.15043",
+    ["adversarial attacks", "alignment", "transfer"],
+    [
+      "Demonstrates transferable adversarial suffixes against aligned models. Read for the threat model, the optimisation method and the limits of a mitigation-only response.",
+      "展示可迁移的对抗后缀能够攻击对齐模型。重点读威胁模型、优化方法与仅靠缓解措施应对的局限。",
+      "Démontre des suffixes adversariaux transférables contre des modèles alignés ; lisez la menace, l’optimisation et les limites des mitigations."
+    ], true
+  ),
+  paperEntry(
+    "codellama", "software_engineering", "2023-08-24", "method",
+    "Code Llama: Open Foundation Models for Code",
+    "Rozière, B., Gehring, J., Gloeckle, F., et al.",
+    "Rozière et al.", "arXiv",
+    "https://arxiv.org/abs/2308.12950",
+    ["code generation", "open models", "infilling"],
+    [
+      "An open code-model family with infilling and long-context variants. Read for the training data, the benchmark choices and the licence and safety constraints.",
+      "具备填充与长上下文变体的开放代码模型家族。重点读训练数据、基准选择，以及许可与安全约束。",
+      "Une famille ouverte de modèles de code avec remplissage et contexte long ; lisez les données, les benchmarks et les contraintes de licence."
+    ]
+  ),
+  paperEntry(
+    "guidelines-hai", "hci", "2019-04-29", "applied",
+    "Guidelines for Human-AI Interaction",
+    "Amershi, S., Weld, D. S., Vorvoreanu, M., et al.",
+    "Amershi et al.", "CHI 2019",
+    "https://doi.org/10.1145/3290605.3300233",
+    ["human-AI interaction", "design guidelines", "evaluation"],
+    [
+      "A validated set of interaction guidelines for AI systems. Read as a design checklist, and ask which guidelines your evaluation actually tests.",
+      "一套经过验证的人工智能交互准则。适合作为设计清单，并追问你的评估真正检验了哪些准则。",
+      "Un ensemble validé de principes d’interaction pour l’IA ; utilisez-le comme liste de conception et interrogez votre évaluation."
+    ]
+  ),
+  paperEntry(
+    "open-x-embodiment", "robotics", "2023-10-13", "applied",
+    "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+    "Open X-Embodiment Collaboration, O’Neill, A., Rehman, A., et al.",
+    "Open X-Embodiment Collaboration", "arXiv",
+    "https://arxiv.org/abs/2310.08864",
+    ["robot learning", "datasets", "cross-embodiment"],
+    [
+      "A cross-institution dataset and model effort for cross-embodiment robot learning. Read for data standardisation and the limits of aggregate benchmarks.",
+      "跨机构的数据集与模型计划，面向跨具身机器人学习。重点读数据标准化与聚合基准的边界。",
+      "Un effort multi-institutions de données et de modèles pour l’apprentissage robotique multi-corps ; lisez la standardisation et les limites des benchmarks."
+    ]
+  ),
+  paperEntry(
+    "aloha", "robotics", "2023-07-10", "method",
+    "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+    "Zhao, T. Z., Kumar, V., Levine, S., & Finn, C.",
+    "Zhao et al.", "RSS 2023",
+    "https://doi.org/10.15607/RSS.2023.XIX.016",
+    ["bimanual manipulation", "imitation learning", "low-cost hardware"],
+    [
+      "Shows that low-cost bimanual hardware plus imitation learning can perform fine manipulation. Read for the hardware assumptions and the data-collection burden.",
+      "证明低成本双臂硬件配合模仿学习可以完成精细操作。重点读硬件假设与数据采集负担。",
+      "Montre qu’un matériel bimanuel low-cost et l’imitation permettent une manipulation fine ; lisez les hypothèses et le coût des données."
+    ]
+  ),
+  paperEntry(
+    "optimus", "industrial", "2024-02-15", "method",
+    "OptiMUS: Scalable Optimization Modeling with (MI)LP Solvers and Large Language Models",
+    "AhmadiTeshnizi, A., Gao, W., & Udell, M.",
+    "AhmadiTeshnizi et al.", "arXiv",
+    "https://arxiv.org/abs/2402.10172",
+    ["optimisation modelling", "LLM agents", "MILP"],
+    [
+      "An LLM agent that formulates and debugs optimisation models with solvers. Read for the verification loop and the cost of a wrong formulation.",
+      "用求解器建立并调试优化模型的大模型智能体。重点读验证回路，以及错误建模的代价。",
+      "Un agent LLM qui formule et débogue des modèles d’optimisation ; lisez la boucle de vérification et le coût d’une mauvaise formulation."
+    ]
+  ),
+  paperEntry(
+    "photonic-dnn", "photonics", "2022-06-01", "method",
+    "An On-Chip Photonic Deep Neural Network for Image Classification",
+    "Ashtiani, F., Geers, A. J., & Aflatouni, F.",
+    "Ashtiani et al.", "Nature",
+    "https://doi.org/10.1038/s41586-022-04714-0",
+    ["optical computing", "deep learning", "integrated photonics"],
+    [
+      "Demonstrates an integrated photonic deep network for image classification. Read for the optical architecture and the precision, calibration and scaling constraints.",
+      "演示用于图像分类的集成光子深度网络。重点读光学架构，以及精度、标定与扩展约束。",
+      "Démontre un réseau profond photonique intégré pour la classification d’images ; lisez l’architecture, la précision et les contraintes d’échelle."
+    ]
+  ),
+  paperEntry(
+    "mace", "materials", "2022-06-15", "method",
+    "MACE: Higher Order Equivariant Message Passing Neural Networks for Fast and Accurate Force Fields",
+    "Batatia, I., Kovács, D. P., Simm, G. N. C., et al.",
+    "Batatia et al.", "NeurIPS 2022",
+    "https://arxiv.org/abs/2206.07697",
+    ["equivariant models", "force fields", "molecular simulation"],
+    [
+      "An equivariant message-passing model for accurate and fast force fields. Read for the symmetry argument and the cost of higher-order interactions.",
+      "用于高精度、快速力场的高阶等变消息传递模型。重点读对称性论证与高阶相互作用的成本。",
+      "Un modèle équivariant de passage de messages pour champs de force précis ; lisez l’argument de symétrie et le coût des interactions."
+    ]
+  ),
+  paperEntry(
+    "m3gnet", "materials", "2022-11-28", "method",
+    "A Universal Graph Deep Learning Interatomic Potential for the Periodic Table",
+    "Chen, C., & Ong, S. P.",
+    "Chen & Ong", "Nature Computational Science",
+    "https://doi.org/10.1038/s43588-022-00349-3",
+    ["interatomic potentials", "graph networks", "materials"],
+    [
+      "A universal graph-network potential spanning the periodic table. Read for the training distribution and the transfer limits outside it.",
+      "覆盖元素周期表的通用图网络势函数。重点读训练分布，以及分布之外的迁移边界。",
+      "Un potentiel universel sur graphes couvrant le tableau périodique ; lisez la distribution d’entraînement et les limites de transfert."
+    ]
+  ),
+  paperEntry(
+    "chemcrow", "chemical", "2023-04-11", "applied",
+    "ChemCrow: Augmenting Large-Language Models with Chemistry Tools",
+    "Bran, A. M., Cox, S., Schilter, O., et al.",
+    "Bran et al.", "arXiv",
+    "https://arxiv.org/abs/2304.05376",
+    ["chemistry", "tool use", "LLM agents"],
+    [
+      "Connects a language model to chemistry tools for planning and synthesis tasks. Read for the tool interface, safety controls and the evaluation of scientific validity.",
+      "把语言模型连接到化学工具以完成规划与合成任务。重点读工具接口、安全控制与科学有效性评估。",
+      "Relie un modèle de langage à des outils chimiques ; lisez l’interface, les contrôles de sûreté et l’évaluation de validité."
+    ]
+  ),
+  paperEntry(
+    "graph-physics", "mechanical", "2020-02-21", "method",
+    "Learning to Simulate Complex Physics with Graph Networks",
+    "Sánchez-González, A., Godwin, J., Pfaff, T., et al.",
+    "Sánchez-González et al.", "ICML 2020",
+    "https://arxiv.org/abs/2002.09405",
+    ["graph networks", "physics simulation", "particles"],
+    [
+      "Learns particle-based physics simulation with graph networks. Read for the inductive bias and the gap between rollout stability and physical validity.",
+      "用图网络学习基于粒子的物理模拟。重点读归纳偏置，以及长期推演稳定性与物理有效性之间的差距。",
+      "Apprend la simulation physique par particules avec des réseaux de graphes ; lisez le biais inductif et la stabilité des rollouts."
+    ]
+  ),
+  paperEntry(
+    "med-palm2", "biomedical", "2023-05-16", "applied",
+    "Towards Expert-Level Medical Question Answering with Large Language Models",
+    "Singhal, K., Tu, T., Gottweis, J., et al.",
+    "Singhal et al.", "arXiv",
+    "https://arxiv.org/abs/2305.09617",
+    ["medical QA", "clinical evaluation", "LLM"],
+    [
+      "Evaluates a medical language model against expert-written questions and clinician review. Read for the evaluation design and the distance from clinical deployment.",
+      "以专家题目与临床医生评审评估医学语言模型。重点读评估设计，以及距离临床部署的距离。",
+      "Évalue un modèle médical avec des questions d’experts et une revue clinique ; lisez l’évaluation et l’écart avec le déploiement clinique."
+    ]
   )
 ];
 

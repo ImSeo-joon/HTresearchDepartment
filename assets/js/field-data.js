@@ -318,7 +318,57 @@
   window.HTRD_ENGINEERING_GROUPS = groups;
   window.HTRD_ENGINEERING_FIELDS = fields;
 
-  var languages = ["en", "zh", "fr"];
+  var jaGroups = {
+    digital: "デジタル・情報",
+    intelligent: "知能・制御",
+    electronic: "電子・通信",
+    physical: "材料・製造",
+    built: "建設・環境",
+    life_energy: "生命・エネルギー",
+    cross: "横断工学"
+  };
+
+  var jaFields = {
+    ai_core: ["人工知能基礎", "表現学習、推論、エージェント、汎用モデル。"],
+    generative_ai: ["生成AI", "大規模言語モデル、拡散モデル、マルチモーダル生成。"],
+    computer_vision: ["コンピュータビジョン", "画像、動画、3D知覚、視覚基盤モデル。"],
+    nlp: ["自然言語処理", "理解、生成、検索、言語モデル評価。"],
+    data_science: ["データ科学・統計", "因果推論、統計学習、データ基盤。"],
+    computer_systems: ["計算機システム", "アーキテクチャ、OS、分散システム、性能。"],
+    networks: ["コンピュータネットワーク", "プロトコル、プログラマブルネットワーク、運用、計測。"],
+    cybersecurity: ["サイバーセキュリティ", "システムセキュリティ、プライバシー、敵対的攻撃、モデル安全性。"],
+    software_engineering: ["ソフトウェア工学", "プログラム解析、テスト、AI支援開発、実証研究。"],
+    hci: ["ヒューマン・コンピュータ・インタラクション", "対話設計、ユーザビリティ、協働、AI体験。"],
+    robotics: ["ロボティクス・身体知能", "知覚、操作、移動、視覚言語行動モデル。"],
+    control: ["制御工学", "学習制御、安全制御、推定、自律意思決定。"],
+    industrial: ["産業・システム工学", "オペレーションズリサーチ、サプライチェーン、生産システム、人間要因。"],
+    electrical: ["電気工学", "電力系統、電機、パワーエレクトロニクス、系統連系。"],
+    electronics: ["マイクロエレクトロニクス・集積回路", "チップアーキテクチャ、デバイス、実装、存算一体。"],
+    communications: ["情報通信工学", "無線、6G、通信センシング統合、ネットワーク理論。"],
+    photonics: ["光学・フォトニクス", "集積フォトニクス、光通信、レーザー、光計算。"],
+    instrumentation: ["計測科学技術", "センシング、計測、イメージング、量子センシング、エッジ知覚。"],
+    materials: ["材料科学・工学", "計算材料、生成設計、キャラクタリゼーション、エネルギー材料。"],
+    chemical: ["化学工学", "プロセスシステム、触媒、反応工学、自律実験。"],
+    mechanical: ["機械工学", "力学、熱流体、計算力学、ロボティクス、積層造形。"],
+    aerospace: ["航空宇宙工学", "機体設計、推進、誘導、衛星、宇宙システム。"],
+    nuclear: ["核科学・技術", "炉物理、安全性、燃料サイクル、核技術応用。"],
+    civil: ["土木工学", "構造、地盤、交通、防災、デジタルツイン。"],
+    environmental: ["環境科学・工学", "水質、大気、生態モニタリング、低炭素処理。"],
+    biomedical: ["生体医工学", "医用画像、生体力学、デバイス、健康基盤モデル。"],
+    energy: ["エネルギー・動力工学", "再生可能エネルギー、蓄エネルギー、水素、動力、脱炭素。"],
+    interdisciplinary_eng: ["横断工学", "二つ以上の工学分野の実質的統合。"]
+  };
+
+  groups.forEach(function (group) {
+    group.label.ja = jaGroups[group.value] || group.label.en;
+  });
+  fields.forEach(function (field) {
+    var value = jaFields[field.value];
+    field.label.ja = value ? value[0] : field.label.en;
+    field.desc.ja = value ? value[1] : field.desc.en;
+  });
+
+  var languages = ["en", "zh", "fr", "ja"];
   languages.forEach(function (lang) {
     if (!window.I18N) return;
     if (!window.I18N[lang]) window.I18N[lang] = {};

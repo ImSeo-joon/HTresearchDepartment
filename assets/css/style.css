@@ -78,6 +78,8 @@
   --display: "Cormorant Garamond", "Noto Serif SC", "Songti SC", "STSong", serif;
   --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", "Noto Serif SC", "Songti SC", serif;
   --sans: "Helvetica Neue", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  --serif-ja: "Iowan Old Style", "Palatino Linotype", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "Noto Serif JP", "Noto Serif SC", serif;
+  --sans-ja: "Helvetica Neue", "Yu Gothic", "YuGothic", "Hiragino Sans", "Noto Sans JP", "Noto Sans SC", sans-serif;
   --max: 1240px;
   --wide: 1380px;
   --reading: 760px;
@@ -5091,5 +5093,120 @@ html[lang="zh-Hans"] .principle h3 {
   .install-pill,
   .pwa-install {
     display: none !important;
+  }
+}
+
+/* ---------- Japanese typography ---------- */
+
+html[lang="ja"] body {
+  font-family: var(--serif-ja);
+  letter-spacing: 0.015em;
+  line-height: 1.92;
+}
+
+html[lang="ja"] .brand__name,
+html[lang="ja"] .footer__name {
+  font-family: var(--serif-ja);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+html[lang="ja"] .hero__title {
+  font-family: var(--serif-ja);
+  font-weight: 500;
+  font-size: clamp(2.6rem, 4.5vw, 5rem);
+  letter-spacing: 0.02em;
+  line-height: 1.24;
+  white-space: nowrap;
+}
+
+html[lang="ja"] .hero__title em,
+html[lang="ja"] .page-hero h1 em {
+  color: var(--gold-light);
+  font-style: normal;
+}
+
+html[lang="ja"] .section-head h2,
+html[lang="ja"] .manifesto__quote,
+html[lang="ja"] .studio-teaser h2,
+html[lang="ja"] .match__intro h2,
+html[lang="ja"] .chain__detail h3,
+html[lang="ja"] .charter__head h2,
+html[lang="ja"] .essay-dialog h2,
+html[lang="ja"] .page-hero h1,
+html[lang="ja"] .notfound h1 {
+  font-family: var(--serif-ja);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
+}
+
+html[lang="ja"] .section-head h2 {
+  font-size: clamp(2.2rem, 3.8vw, 3.8rem);
+}
+
+html[lang="ja"] .page-hero h1 {
+  font-size: clamp(2.7rem, 4.7vw, 5.2rem);
+  line-height: 1.22;
+}
+
+html[lang="ja"] .manifesto__quote {
+  font-size: clamp(2.2rem, 3.6vw, 3.8rem);
+}
+
+html[lang="ja"] .hero__lead,
+html[lang="ja"] .section-head__lead,
+html[lang="ja"] .page-hero__lead {
+  font-family: var(--serif-ja);
+  letter-spacing: 0.015em;
+  line-height: 1.95;
+}
+
+html[lang="ja"] .kicker,
+html[lang="ja"] .eyebrow,
+html[lang="ja"] .nav a,
+html[lang="ja"] .brand__latin,
+html[lang="ja"] .btn,
+html[lang="ja"] .text-link,
+html[lang="ja"] .folio__label,
+html[lang="ja"] .footer__heading,
+html[lang="ja"] .paper-card__meta,
+html[lang="ja"] .paper-card__actions,
+html[lang="ja"] .papers-filters label,
+html[lang="ja"] .install-pill {
+  font-family: var(--sans-ja);
+  letter-spacing: 0.1em;
+}
+
+html[lang="ja"] .paper-card h3,
+html[lang="ja"] .book h3,
+html[lang="ja"] .note-card h3,
+html[lang="ja"] .principle h3 {
+  font-family: var(--serif-ja);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+html[lang="ja"] .folio__question,
+html[lang="ja"] .charter__question,
+html[lang="ja"] .match__tagline,
+html[lang="ja"] .chain__short-lead,
+html[lang="ja"] .essay-dialog__deck,
+html[lang="ja"] .essay-dialog__quote {
+  font-style: normal;
+}
+
+.lang button[data-lang="ja"] {
+  min-width: 56px;
+}
+
+@media (max-width: 720px) {
+  html[lang="ja"] .hero__title {
+    font-size: clamp(2.2rem, 9.5vw, 2.8rem);
+  }
+
+  html[lang="ja"] .page-hero h1 {
+    font-size: clamp(2.1rem, 9vw, 3rem);
   }
 }

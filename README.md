@@ -1,6 +1,6 @@
 # 高桌科研发展司 · High Table Research Department
 
-一个纯静态、无需构建的工科科研全链路工坊站点。默认英文，支持 **English / 中文 / Français** 三语切换。所有文件都在本目录内，可直接作为 GitHub Pages 仓库根目录上传。
+一个纯静态、无需构建的工科科研全链路工坊站点。默认英文，支持 **English / 中文 / Français / 日本語** 四语切换。所有文件都在本目录内，可直接作为 GitHub Pages 仓库根目录上传。
 
 > 当前本地目录：`D:\HighTableProgram\HighTableresearchDepartment`
 
@@ -32,10 +32,10 @@ python -m http.server 4173 --bind 127.0.0.1
 - **首页**：以「L'ATELIER」窗景为背景的品牌首页、十阶段科研全链路、可交互方法匹配器，以及最新论文精选。
 - **Research Studio**：按学科、意图、证据、情境、周期、团队与风险偏好，生成研究章程、问题阶梯、推荐设计、伦理提示、时间线、可行性评分、风险登记与未来七天行动；可下载 Markdown 或打印。
 - **Paper Index**：
-  - 81 篇经 arXiv / Crossref / OpenAlex 元数据核验的论文，覆盖 28 个工科细分方向。
+  - 105 篇经 arXiv / Crossref / OpenAlex 元数据核验的论文，覆盖 28 个工科细分方向；其中 51 篇为 2024 年以来。
   - 默认按精确日期倒序，优先展示 2024–2026 年论文；可筛选 2024–2026、2020–2023、2020 年以前。
   - 按「数字与信息 / 智能与控制 / 电子与通信 / 材料与制造 / 土木与环境 / 生命与能源 / 交叉工科」分组。
-  - 每篇含中英法注释、标签、引用与原文链接，可直接加入文献矩阵或导出 CSV。
+  - 每篇含中英法日注释、标签、引用与原文链接，可直接加入文献矩阵或导出 CSV。
 - **Toolkit**：
   - 文献矩阵：添加、搜索、筛选、删除、导出 CSV；数据保存在浏览器本地。
   - 样本量计算器：单一比例、置信水平、误差范围、有限总体校正、设计效应与无应答调整。
@@ -64,26 +64,28 @@ python -m http.server 4173 --bind 127.0.0.1
 └─ assets/
    ├─ css/
    │  └─ style.css
-   ├─ fonts/                 Cormorant Garamond、Noto Serif SC、Noto Sans SC（SIL OFL，中文子集）
+   ├─ fonts/                 Cormorant Garamond、Noto Serif SC、Noto Sans SC（SIL OFL，中文/日文字集）
    ├─ img/brand/             首页/模块背景、圆角透明 PWA 图标、favicon、社交分享封面
    └─ js/
       ├─ i18n-en.js          英文全站文案与数据
       ├─ i18n-zh.js          中文全站文案与数据
       ├─ i18n-fr.js          法文全站文案与数据
-      ├─ field-data.js       28 个工科细分方向的单一数据源（三语标签与分组）
+      ├─ i18n-ja.js          日文全站文案（英文后备）
+      ├─ field-data.js       28 个工科细分方向的单一数据源（四语标签与分组）
       ├─ site.js             语言切换、导航、动效、下载与本地存储工具
       ├─ home.js             全链路与方法匹配器
       ├─ studio.js           研究章程模拟器与答辩练习
       ├─ toolkit.js          文献矩阵、样本量、摘要与书目
-      ├─ paper-data.js       论文索引数据、三语注释与论文页文案
+      ├─ paper-data.js       论文索引数据、英中法注释与论文页文案
+      ├─ paper-i18n-ja.js    105 篇论文的日语注释与论文页文案
       ├─ papers.js           论文筛选、排序、详情、引用与矩阵导入
       └─ notes.js            随笔弹窗与术语表
 ```
 
 ## 修改方式
 
-- 改文案或内容：编辑 `assets/js/i18n-en.js`、`i18n-zh.js`、`i18n-fr.js`。三份文件结构一致，新增键时请三语同步。
-- 改工科细分方向：编辑 `assets/js/field-data.js`；它会同时注入三语的研究工作室选项与论文筛选分组。
+- 改文案或内容：编辑 `assets/js/i18n-en.js`、`i18n-zh.js`、`i18n-fr.js`、`i18n-ja.js`。日语文件会以英文为后备，新增键时请四语同步。
+- 改工科细分方向：编辑 `assets/js/field-data.js`；它会同时注入四语的研究工作室选项与论文筛选分组。
 - 加论文：编辑 `assets/js/paper-data.js`，字段值使用 `field-data.js` 中的 `value`；默认按 `date` 倒序。
 - 改配色与排版：编辑 `assets/css/style.css` 顶部的 CSS 变量。
 - 改页面结构：编辑对应的 `.html` 文件。
@@ -102,7 +104,7 @@ powershell -ExecutionPolicy Bypass -File .\tools\build-icons.ps1
 
 ## 中文字体
 
-站点自托管 **Noto Serif SC**（正文与标题）和 **Noto Sans SC**（界面标签）的可变字重子集，体积约 0.45 MB / 0.34 MB。字体遵循 SIL Open Font License 1.1；授权说明见 `assets/fonts/LICENSE-NOTO.txt`。
+站点自托管 **Noto Serif SC**（正文与标题）和 **Noto Sans SC**（界面标签）的可变字重子集，覆盖中文与日文假名/汉字，体积约 0.74 MB / 0.55 MB。字体遵循 SIL Open Font License 1.1；授权说明见 `assets/fonts/LICENSE-NOTO.txt`。
 
 ## 隐私与边界
 

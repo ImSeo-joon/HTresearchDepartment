@@ -4,7 +4,7 @@ I18N.fr = {
   meta: {
     home: {
       title: "Département de recherche de la Haute Table — de la première question à la soutenance",
-      description: "Un atelier de recherche mené par l’ingénierie : 28 sous-domaines, 81 articles récents, un studio interactif et une boîte à outils en trois langues."
+      description: "Un atelier de recherche mené par l’ingénierie : 28 sous-domaines, 105 articles récents, un studio interactif et une boîte à outils en quatre langues."
     },
     studio: {
       title: "Studio de recherche — Département de recherche de la Haute Table",
@@ -20,7 +20,7 @@ I18N.fr = {
     },
     papers: {
       title: "Index des articles — Département de recherche de la Haute Table",
-      description: "Un index vivant de 81 articles récents et structurants dans 28 sous-domaines d’ingénierie, avec notes, citations et export."
+      description: "Un index vivant de 105 articles récents et structurants dans 28 sous-domaines d’ingénierie, avec notes, citations et export."
     },
     notfound: {
       title: "Page introuvable — Département de recherche de la Haute Table",
@@ -60,7 +60,7 @@ I18N.fr = {
     footerStatement: "Ce site est un atelier pédagogique. Il soutient votre jugement ; il ne remplace ni la supervision, ni l’évaluation éthique, ni un conseil professionnel.",
     footerNote: "Aucun compte, aucun suivi. Vos notes restent dans ce navigateur.",
     footerRights: "© 2026 Département de recherche de la Haute Table",
-    footerMade: "Pour le travail au long cours · EN / 中文 / FR",
+    footerMade: "Pour le travail au long cours · EN / 中文 / FR / 日本語",
     back: "Retour",
     next: "Suivant",
     previous: "Précédent",
@@ -97,7 +97,7 @@ I18N.fr = {
     },
     stats: [
       { value: "28", label: "sous-domaines d’ingénierie" },
-      { value: "81", label: "articles indexés" },
+      { value: "105", label: "articles indexés" },
       { value: "2026", label: "article le plus récent" }
     ],
     marquee: ["Question", "Littérature", "Design", "Éthique", "Preuves", "Analyse", "Écriture", "Soutenance", "Impact"],
